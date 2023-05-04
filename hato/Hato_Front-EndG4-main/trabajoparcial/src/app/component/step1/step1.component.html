@@ -1,0 +1,59 @@
+
+<div class="product-box-container">
+    <mat-card class="product-box">
+        <mat-card-title>Seleccionar Productos</mat-card-title>
+        <mat-card-content>
+            <label>Habitacion</label>
+            <mat-form-field>
+                <mat-label>Nro°</mat-label>
+                <mat-select [(ngModel)]="selectedOptionNro">
+                    <mat-option *ngFor="let option of optionshostal" [value]="option">{{ option }}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <label>Bebidas</label>
+            <div class="options-menu-two"><!---->
+                <mat-form-field>
+                    <mat-label>Elige</mat-label>
+                    <mat-select [(ngModel)]="selectedOptiondrink">
+                        <mat-option *ngFor="let option of optionsdrink" [value]="option">{{ option }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="cantidad">
+                    <label>Cantidad</label>
+                    <input matInput type="number" [(ngModel)]="drinknumber">
+                </div>
+            </div><!---->
+            <label>Aperitivo</label>
+            <div class="options-menu-two"><!---->
+                <mat-form-field>
+                    <mat-label>Elige</mat-label>
+                    <mat-select [(ngModel)]="selectedOptionfood">
+                        <mat-option *ngFor="let option of optionsfoods" [value]="option">{{ option }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="cantidad">
+                    <label>Cantidad</label>
+                    <input matInput type="number" [(ngModel)]="foodnumber">
+                </div>
+            </div><!---->
+            <label>Preservativos</label>
+            <div class="options-menu-two"><!---->
+                <mat-form-field>
+                    <mat-label>Elige</mat-label>
+                    <mat-select [(ngModel)]="selectedOptioncondoms">
+                        <mat-option *ngFor="let option of optionscondoms" [value]="option">{{ option }}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="cantidad">
+                    <label>Cantidad</label>
+                    <input matInput type="number" [(ngModel)]="condomsnumber">
+                </div>
+            </div><!---->
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="actionButton neon" mat-raised-button color="primary" (click)="Save()">
+              Siguiente
+            </button>
+          </mat-card-actions>
+    </mat-card>
+</div>
