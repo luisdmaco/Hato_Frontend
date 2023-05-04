@@ -1,0 +1,166 @@
+{
+  "Marriotelo": [
+    {
+      "room": "1",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "2",
+      "guestName": "John",
+      "checkinDate": "2019-01-02",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "3",
+      "guestName": "John",
+      "checkinDate": "2019-01-03",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "4",
+      "guestName": "John",
+      "checkinDate": "2019-01-04",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "5",
+      "guestName": "John",
+      "checkinDate": "2019-01-05",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "6",
+      "guestName": "John",
+      "checkinDate": "2019-01-06",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "7",
+      "guestName": "Luis",
+      "checkinDate": "2019-01-31",
+      "price": "600",
+      "status": "checkedIn",
+      "time": "360"
+    },
+    {
+      "room": "8",
+      "guestName": "John",
+      "checkinDate": "2019-01-08",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "9",
+      "guestName": "Nicolas",
+      "checkinDate": "2019-04-14",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "10",
+      "guestName": "Josef",
+      "checkinDate": "2019-04-23",
+      "price": "5630",
+      "status": "checkedOut",
+      "time": "1080"
+    }
+  ],
+  "ibis": [
+    {
+      "room": "1",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "2",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "3",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "4",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "5",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "6",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "7",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "8",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedIn",
+      "time": "60"
+    },
+    {
+      "room": "9",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    },
+    {
+      "room": "10",
+      "guestName": "John",
+      "checkinDate": "2019-01-01",
+      "price": "100",
+      "status": "checkedOut",
+      "time": "60"
+    }
+  ]
+}
