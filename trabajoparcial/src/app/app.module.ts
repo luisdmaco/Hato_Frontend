@@ -13,6 +13,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { HttpClientModule } from "@angular/common/http";
+import { MatSelectModule } from '@angular/material/select';
 
 import { SignInComponent } from './component/sign-in/sign-in.component';
 import { SignUpPlansComponent } from './component/sign-up-plans/sign-up-plans.component';
@@ -24,6 +25,8 @@ import { TableComponent } from "./component/hotel-admin-view/table/table.compone
 import { HotelAdminViewComponent } from "./component/hotel-admin-view/hotel-admin-view/hotel-admin-view.component";
 import { ToolbarComponent } from "./component/hotel-admin-view/toolbar/toolbar.component";
 import { FormComponent } from "./component/hotel-admin-view/form/form.component";
+import { Step1Component } from './component/step1/step1.component';
+import { Step2Component } from './component/step2/step2.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,8 @@ import { FormComponent } from "./component/hotel-admin-view/form/form.component"
     HotelAdminViewComponent,
     ToolbarComponent,
     FormComponent,
+    Step1Component,
+    Step2Component
   ],
   imports: [
     BrowserModule,
@@ -53,6 +58,7 @@ import { FormComponent } from "./component/hotel-admin-view/form/form.component"
     MatIconModule,
     MatPaginatorModule,
     HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],
