@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
-import { DataService } from '../data.service';
+import { Component } from "@angular/core";
+import { DataService } from "../data.service";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-step2',
-  templateUrl: './step2.component.html',
-  styleUrls: ['./step2.component.css']
+  selector: "app-step2",
+  templateUrl: "./step2.component.html",
+  styleUrls: ["./step2.component.css"],
 })
 export class Step2Component {
   hostal!: string;
@@ -15,7 +16,7 @@ export class Step2Component {
   foodNumber!: string;
   condomNumber!: string;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private router: Router) {}
 
   ngOnInit() {
     this.hostal = this.dataService.nhostal;
@@ -26,7 +27,7 @@ export class Step2Component {
     this.foodNumber = this.dataService.nfood;
     this.condomNumber = this.dataService.ncondoms;
   }
-  Confirmar(){
-    console.log("routing")
+  Confirmar() {
+    this.router.navigate(["/room-services"]);
   }
 }

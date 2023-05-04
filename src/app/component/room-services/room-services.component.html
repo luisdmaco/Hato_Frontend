@@ -1,30 +1,51 @@
 <div class="container">
-    <h1 class="neon-title">Servicios</h1>
-    <div class="content">
-        <div class="card-container">
-          <mat-card class="service-card">
-            <img mat-card-image src="../../../assets/imagenes/GestionCentralizada.jpg" alt="Hacer pedidos">
-            <mat-card-content>
-              <h3>Hacer pedidos</h3>
-            </mat-card-content>
-            <mat-card-actions>
-              <button class="actionButton neon" mat-raised-button color="accent">Solicitar Servicio</button>
-            </mat-card-actions>
-          </mat-card>
+  <h1 class="neon-title">Servicios</h1>
+  <div class="content">
+    <div class="card-container">
+      <mat-card class="service-card">
+        <img
+          mat-card-image
+          src="../../../assets/imagenes/GestionCentralizada.jpg"
+          alt="Hacer pedidos"
+        />
+        <mat-card-content>
+          <h3>Hacer pedidos</h3>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            class="actionButton neon"
+            mat-raised-button
+            color="accent"
+            (click)="step1()"
+          >
+            Solicitar Servicio
+          </button>
+        </mat-card-actions>
+      </mat-card>
 
-          <mat-card class="service-card">
-            <img mat-card-image src="../../../assets/imagenes/Emergency-Button.png" alt="Emergencia">
-          </mat-card>
+      <mat-card class="service-card">
+        <img
+          mat-card-image
+          src="../../../assets/imagenes/Emergency-Button.png"
+          alt="Emergencia"
+        />
+      </mat-card>
 
-          <mat-card class="service-card">
-            <img mat-card-image src="../../../assets/imagenes/Limpieza.jpg" alt="Limpieza de habitación">
-            <mat-card-content>
-              <h3>Limpieza de habitación</h3>
-            </mat-card-content>
-            <mat-card-actions>
-              <button class="actionButton neon" mat-raised-button color="accent">Solicitar Servicio</button>
-            </mat-card-actions>
-          </mat-card>
-        </div>
+      <mat-card class="service-card">
+        <img
+          mat-card-image
+          src="../../../assets/imagenes/Limpieza.jpg"
+          alt="Limpieza de habitación"
+        />
+        <mat-card-content>
+          <h3>Limpieza de habitación</h3>
+        </mat-card-content>
+        <mat-card-actions>
+          <button class="actionButton neon" mat-raised-button color="accent">
+            Solicitar Servicio
+          </button>
+        </mat-card-actions>
+      </mat-card>
     </div>
   </div>
+</div>
