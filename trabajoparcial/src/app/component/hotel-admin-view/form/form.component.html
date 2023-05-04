@@ -1,0 +1,71 @@
+<form (submit)="onSumit()" #roomForm="ngForm">
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      placeholder="Habitacion"
+      name="room"
+      required
+      [(ngModel)]="roomData.room"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      placeholder="Huesped"
+      name="guestName"
+      required
+      [(ngModel)]="roomData.guestName"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      placeholder="Fecha de ingreso"
+      name="checkinDate"
+      required
+      [(ngModel)]="roomData.checkinDate"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      placeholder="Precio"
+      name="price"
+      required
+      [(ngModel)]="roomData.price"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <input
+      type="text"
+      matInput
+      placeholder="Status"
+      name="status"
+      required
+      [(ngModel)]="roomData.status"
+    />
+  </mat-form-field>
+  <input
+    type="text"
+    matInput
+    placeholder="Tiempo"
+    name="time"
+    required
+    [(ngModel)]="roomData.time"
+  />
+  <ng-container *ngIf="isEditMode; else elseTemplate">
+    <!-- Modo edición -->
+    <button mat-button color="primary">Update</button>
+    <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+  </ng-container>
+  &nbsp;
+  <ng-template #elseTemplate mat-button color="primary">Add</ng-template> &nbsp;
+</form>
