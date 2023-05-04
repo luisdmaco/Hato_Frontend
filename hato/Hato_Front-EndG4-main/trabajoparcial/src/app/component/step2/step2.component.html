@@ -1,0 +1,26 @@
+<div class="product-box-container">
+    <mat-card class="product-box">
+        <mat-card-title>Confirmar Productos</mat-card-title>
+        <mat-card-content>
+            <label>Habitacion elegida: </label>
+            <label class="choose">2<br></label>
+            <label>Bebida elegida: </label>
+            <label class="choose">{{drink}}<br></label>
+            <label>Cantidad:</label>
+            <label class="choose">{{drinkNumber}}<br></label>
+            <label>Aperitivo elegido: </label>
+            <label class="choose">{{food}}<br></label>
+            <label>Cantidad:</label>
+            <label class="choose">{{foodNumber}}<br></label>
+            <label>Preservativo elegido: </label>
+            <label class="choose">{{condom}}<br></label>
+            <label>Cantidad: </label>
+            <label class="choose">{{condomNumber}}<br></label>
+        </mat-card-content>
+        <mat-card-actions>
+            <button class="actionButton neon" mat-raised-button color="primary" (click)="Confirmar()">
+              Confirmar
+            </button>
+          </mat-card-actions>
+    </mat-card>
+</div>
