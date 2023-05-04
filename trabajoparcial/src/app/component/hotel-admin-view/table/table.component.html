@@ -11,7 +11,9 @@
 
   <ng-container matColumnDef="checkinDate">
     <mat-header-cell *matHeaderCellDef> Fecha de ingreso </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.checkinDate }} </mat-cell>
+    <mat-cell *matCellDef="let element">
+      {{ element.checkinDate | date : "dd-MM-yyyy" }}
+    </mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="price">

@@ -12,12 +12,13 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatButtonModule } from "@angular/material/button";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { HttpClientModule } from "@angular/common/http";
 
 import { SignInComponent } from "./component/sign-in/sign-in.component";
 import { TableComponent } from "./component/hotel-admin-view/table/table.component";
 import { HotelAdminViewComponent } from "./component/hotel-admin-view/hotel-admin-view/hotel-admin-view.component";
 import { ToolbarComponent } from "./component/hotel-admin-view/toolbar/toolbar.component";
-import { FormComponent } from './component/hotel-admin-view/form/form.component';
+import { FormComponent } from "./component/hotel-admin-view/form/form.component";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { FormComponent } from './component/hotel-admin-view/form/form.component'
     MatIconModule,
     MatButtonModule,
     MatPaginatorModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
