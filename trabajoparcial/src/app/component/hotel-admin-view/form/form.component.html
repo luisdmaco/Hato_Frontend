@@ -62,7 +62,6 @@
     [(ngModel)]="roomData.time"
   />
   <ng-container *ngIf="isEditMode; else elseTemplate">
-    <!-- Modo edición -->
     <button mat-button color="primary">Update</button>
     <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
   </ng-container>

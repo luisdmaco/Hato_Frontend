@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
-import { MatTable, MatTableDataSource } from "@angular/material/table";
+import { Component, ViewChild } from "@angular/core";
+import { MatTableDataSource } from "@angular/material/table";
 import { MatPaginator } from "@angular/material/paginator";
 import { MatSort } from "@angular/material/sort";
 import { HttpDataService } from "../../../services/http-data.service";
