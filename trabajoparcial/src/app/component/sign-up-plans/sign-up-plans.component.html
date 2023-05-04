@@ -1,0 +1,27 @@
+<div class="pricing">
+    <mat-card class="card-master">
+        <div class="light-area"></div>
+      <mat-card-header>
+        <mat-card-title class="step">Paso 1 de 3</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="card-container">
+        <h1 class="neon-title">Elige tu plan de Hato</h1>
+        <div class="pricing-container">
+          <div class="question-container">
+            <h3 [class.input-active]="inputActive" class="text">¿Cuántas habitaciones tienes?</h3>
+            <mat-form-field [ngClass]="{'input-box-active': inputActive}">
+              <input matInput type="number" [(ngModel)]="roomCount" min="0" (input)="calculatePrice()" (focus)="toggleGlow(true)" (blur)="toggleGlow(false)">
+            </mat-form-field>
+          </div>          
+          <div class="price-container">
+            <h3 [class.price-active]="inputActive" class="text">Precios desde S/ 7.00 por habitación</h3>
+            <div class="total-price">
+              <h2 [class.price-active]="inputActive" class="text">S/ {{ totalPrice }}</h2>
+            </div>
+          </div>          
+        </div>
+        <button class="actionButton neon" mat-raised-button color="accent" (click)="subscribe()">Subscribirse</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

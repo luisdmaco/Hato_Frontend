@@ -1,0 +1,29 @@
+<div class="register-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title class="text">Paso 2 de 3</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h1 class="neon-title">Crea tu cuenta</h1>
+        <form>
+          <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Correo electrónico</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Contraseña</mat-label>
+            <input matInput type="password">
+          </mat-form-field>
+        </form>
+        <p class="terms text">
+          Al hacer click en Crear Cuenta acepto las condiciones del servicio y la política
+          de privacidad de Hato.
+        </p>
+        <button mat-raised-button color="primary" class="actionButton neon" (click)="createAccount()">Crear cuenta</button>
+      </mat-card-content>
+    </mat-card>
+  </div>

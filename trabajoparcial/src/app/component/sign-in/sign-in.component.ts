@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -7,7 +9,7 @@ import { Component } from '@angular/core';
 export class SignInComponent {
   email: any;
   password: any;
-  constructor() {
+  constructor(private router: Router) {
     this.email = '';
     this.password = '';
   }
@@ -15,5 +17,6 @@ export class SignInComponent {
   }
 
   createAccount() {
+    this.router.navigate(['/sign-up-plans']);
   }
 }
