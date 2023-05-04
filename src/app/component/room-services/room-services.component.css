@@ -1,0 +1,107 @@
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+* {
+  font-family: 'Lemon/Milk', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #4c2d90, #000000);
+    height: 100vh;
+  }
+  
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.neon-title {
+    font-family: 'Lemon/Milk', sans-serif;
+    color: #e7e7e7;
+    font-size: 32px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    transition: text-shadow 0.3s ease-in-out;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+    margin-bottom: 5%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.service-card {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #905949, #5b4392);
+  padding: 2%;
+  border-radius: 8%;
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+}
+
+.service-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-family: 'Lemon/Milk', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.actionButton {
+  display: flex;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f04e23, #8e3aff);
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.actionButton:hover {
+  background-image: linear-gradient(to right, #c9411e, #6c2cc4);
+}
+
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+}
+
+.neon:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+   from {
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+   }
+   to {
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+   }
+ }
