@@ -7,10 +7,10 @@ import { HotelAdminViewComponent } from "./component/hotel-admin-view/hotel-admi
 
 const routes: Routes = [
   { path: "sign-in", component: SignInComponent },
-  { path: "", pathMatch: "full", redirectTo: "hav-temp" /*'sign-in'*/ },
-  { path: "**", pathMatch: "full", redirectTo: "hav-temp" /*'sign-in'*/ },
+  { path: "", pathMatch: "full", redirectTo: "sign-in" },
+  { path: "**", pathMatch: "full", redirectTo: "sign-in" },
 
-  { path: "hav-temp", component: HotelAdminViewComponent },
+  { path: "hotel-admin-overview", component: HotelAdminViewComponent },
 ];
 
 @NgModule({
