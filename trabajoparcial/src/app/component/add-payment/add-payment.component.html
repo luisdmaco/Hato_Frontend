@@ -1,0 +1,41 @@
+<div class="payment-container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title class="text">Paso 3 de 3</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <h1 class="neon-title">Agrega un método de pago</h1>
+        <p class="description text">
+          Elige un método de pago, completa la información e inicia tu suscripción.
+        </p>
+        <div class="card-logos">
+          <img src="../../../assets/imagenes/visa.png" alt="Visa" class="card-logo">
+          <img src="../../../assets/imagenes/mastercard.png" alt="MasterCard" class="card-logo">
+          <img src="../../../assets/imagenes/americanexpress.png" alt="American Express" class="card-logo">
+          <img src="../../../assets/imagenes/dinnersclub.jpg" alt="Diners Club" class="card-logo">
+        </div>
+        <form>
+          <mat-form-field>
+            <mat-label>Nombre y apellidos</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Número de tarjeta</mat-label>
+            <input matInput>
+          </mat-form-field>
+          <div class="row">
+            <mat-form-field class="expiration text">
+              <mat-label>Fecha de expiración</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field class="security-code text">
+              <mat-label>Código de seguridad</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+        </form>
+        <button mat-raised-button color="primary" class="actionButton neon">Iniciar suscripción</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,144 @@
+@import url('https://fonts.cdnfonts.com/css/lemonmilk');
+* {
+  font-family: 'Lemon/Milk', sans-serif;
+  color: white;
+}
+
+.step{
+  font-family: 'Lemon/Milk', sans-serif;
+  color: white;
+}
+
+.neon-title {
+  font-family: 'Lemon/Milk', sans-serif;
+  color: #e7e7e7;
+  font-size: 32px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: text-shadow 0.3s ease-in-out;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  margin-bottom: 5%;
+}
+
+.text {
+  font-family: 'Lemon/Milk', sans-serif;
+  color: #e7e7e7;
+  font-size: 24px;
+}
+
+.light-area {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+.card-master{
+    position: relative;
+    background-image: linear-gradient(to bottom right, #6a45bb, #2f0909);
+    overflow: hidden;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #4c2d90, #000000);
+  height: 100%;
+}
+
+mat-card {
+  width: 50%;
+  height: 50%;
+}
+
+.input-active {
+  color: #e7e7e7;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+}
+
+.input-box-active .mat-form-field-underline {
+  background-color: #8e3aff;
+}
+
+.input-box-active .mat-form-field-ripple {
+  background-color: #8e3aff;
+}
+
+.price-active {
+  color: #e7e7e7;
+  transition: color 0.3s ease-in-out;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+}
+
+.price-active h2 {
+  color: inherit;
+  text-shadow: inherit;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #ff000000;
+}
+.pricing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ff000000;
+}
+
+.question-container,
+.price-container {
+  flex: 1;
+}
+
+.actionButton {
+  display: flex;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f04e23, #8e3aff);
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.actionButton:hover {
+  background-image: linear-gradient(to right, #c9411e, #6c2cc4);
+}
+
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+}
+
+.neon:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00, 0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff, 0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  }
+}
