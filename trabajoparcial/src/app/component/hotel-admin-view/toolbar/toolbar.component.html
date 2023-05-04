@@ -1,15 +1,39 @@
 <mat-toolbar>
-  <mat-toolbar-row>
-    <span>HATO</span>
+  <mat-toolbar-row class="back--color">
+    <img
+      src="../../../../assets/imagenes/Logo.png"
+      alt="HATO Logo"
+      style="max-height: 64px"
+    />
     <span class="example-spacer"></span>
     <div class="header-container">
       <div id="header-left">
-        <button mat-flat-button aria-label="rooms button">Habitaciones</button>
-        <button mat-flat-button aria-label="history button">Historial</button>
+        <button
+          mat-flat-button
+          color="primary"
+          aria-label="rooms button"
+          class="actionButton neon"
+        >
+          Habitaciones
+        </button>
+        <button
+          mat-flat-button
+          color="primary"
+          aria-label="history button"
+          class="actionButton neon"
+        >
+          Historial
+        </button>
       </div>
-      <!-- Hola, + {{ nombre }} + ! -->
       <div id="header-right">
-        <button mat-flat-button aria-label="logout button">
+        <span class="neon-title padding--subtitle"> Hola, administrador! </span
+        ><br />
+        <button
+          mat-flat-button
+          color="primary"
+          aria-label="logout button"
+          class="actionButton neon"
+        >
           Cerrar Sesion
         </button>
       </div>

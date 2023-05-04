@@ -1,3 +1,13 @@
+.back--color {
+  height: 100%;
+  background-image: linear-gradient(to right, #4c2d90, #000000);
+}
+
+.padding--subtitle {
+  padding-right: 10px;
+  padding-bottom: 7px;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -9,4 +19,60 @@
 #header-right {
   display: flex;
   align-items: center;
+}
+
+.actionButton {
+  display: flex;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #f04e23, #8e3aff);
+  color: #fff;
+  padding: 20px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.actionButton:hover {
+  background-image: linear-gradient(to right, #c9411e, #6c2cc4);
+}
+
+.neon {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00,
+    0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+}
+
+.neon:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff,
+    0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  animation: neonGlow 2s infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff2e00, 0 0 30px #ff2e00,
+      0 0 40px #ff2e00, 0 0 55px #ff2e00, 0 0 75px #ff2e00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff,
+      0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  }
+}
+
+.neon-title {
+  margin-bottom: 1.5rem;
+  font-family: "Lemon/Milk", sans-serif;
+  color: #e7e7e7;
+  font-size: 32px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  transition: text-shadow 0.3s ease-in-out;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #8e3aff, 0 0 30px #8e3aff,
+    0 0 40px #8e3aff, 0 0 55px #8e3aff, 0 0 75px #8e3aff;
+  margin-bottom: 5%;
 }

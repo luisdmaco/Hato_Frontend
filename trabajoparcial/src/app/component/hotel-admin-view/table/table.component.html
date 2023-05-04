@@ -1,44 +1,47 @@
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-  <ng-container matColumnDef="room">
-    <mat-header-cell *matHeaderCellDef> Habitacion </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.room }} </mat-cell>
-  </ng-container>
+<div class="back--color">
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8 element--color">
+    <ng-container matColumnDef="room">
+      <mat-header-cell *matHeaderCellDef> Habitacion </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.room }} </mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="guestName">
-    <mat-header-cell *matHeaderCellDef> Huesped </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.guestName }} </mat-cell>
-  </ng-container>
+    <ng-container matColumnDef="guestName">
+      <mat-header-cell *matHeaderCellDef> Huesped </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.guestName }} </mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="checkinDate">
-    <mat-header-cell *matHeaderCellDef> Fecha de ingreso </mat-header-cell>
-    <mat-cell *matCellDef="let element">
-      {{ element.checkinDate | date : "dd-MM-yyyy" }}
-    </mat-cell>
-  </ng-container>
+    <ng-container matColumnDef="checkinDate">
+      <mat-header-cell *matHeaderCellDef> Fecha de ingreso </mat-header-cell>
+      <mat-cell *matCellDef="let element">
+        {{ element.checkinDate | date : "dd-MM-yyyy" }}
+      </mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="price">
-    <mat-header-cell *matHeaderCellDef> Precio </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.price }} </mat-cell>
-  </ng-container>
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Precio </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.price }} </mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="status">
-    <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.status }} </mat-cell>
-  </ng-container>
+    <ng-container matColumnDef="status">
+      <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.status }} </mat-cell>
+    </ng-container>
 
-  <ng-container matColumnDef="time">
-    <mat-header-cell *matHeaderCellDef> Tiempo </mat-header-cell>
-    <mat-cell *matCellDef="let element"> {{ element.time }} </mat-cell>
-  </ng-container>
+    <ng-container matColumnDef="time">
+      <mat-header-cell *matHeaderCellDef> Tiempo </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{ element.time }} </mat-cell>
+    </ng-container>
 
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-</mat-table>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
 
-<mat-paginator
-  [length]="100"
-  [pageSize]="10"
-  [pageSizeOptions]="[5, 10, 25, 100]"
-  aria-label="Select page"
->
-</mat-paginator>
+  <mat-paginator
+    class="element--color"
+    [length]="100"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>
