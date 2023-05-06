@@ -1,5 +1,11 @@
 [build]
-  command = "npm run build"
+  command = "ng build --configuration production && npm run json-server"
   publish = "dist/trabajoparcial"
+
 [dev]
-  command = "npm start"
+  command = "ng serve --open"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:3000/Marriotelo"
+  status = 200
