@@ -1,6 +1,28 @@
-# Trabajoparcial
+# Hato Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+Hato is a digital platform designed to improve the management of hostels in Peru. It allows hostels to register guest check-ins and check-outs, manage room bookings, and provide room services without direct contact with the administrator.
+
+## Features
+
+- **Guest Management**: Register and manage guest check-ins and check-outs.
+- **Room Booking**: Allow guests to book rooms online.
+- **Service Requests**: Enable guests to request room services digitally.
+
+## Cloning and Setting Up the Project
+
+1. Clone the project from GitHub:
+    ```bash
+    git clone https://github.com/luisdmaco/hato.git
+    ```
+    Navigate into the project directory:
+    ```bash
+    cd hato
+    ```
+
+2. Install the required libraries and dependencies:
+    ```bash
+    npm install
+    ```
 
 ## Development server
 
