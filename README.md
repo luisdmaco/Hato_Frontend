@@ -1,4 +1,4 @@
-# Hato ## (Frontend)
+# Hato (Frontend)
 
 Hato is a digital platform designed to improve the management of hostels in Peru. It allows hostels to register guest check-ins and check-outs, manage room bookings, and provide room services without direct contact with the administrator.
 
